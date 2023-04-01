@@ -1,0 +1,220 @@
+.chat-container {
+  background-color: #131324;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  color: white;
+}
+.contacts-container {
+  border: 0.1rem solid rgb(69, 69, 69);
+  display: grid;
+  grid-template-rows: 95px 530px;
+}
+.contacts-header {
+  background-color: #161b1e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.contacts-header img,
+.contacts-main-section img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.contacts-main-section {
+  background-color: #182b31;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 1rem;
+  cursor: pointer;
+}
+.contacts-main-section::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.contacts-main-section::-webkit-scrollbar-thumb {
+  background-color: #ffffff39;
+  width: 0.1rem;
+  border-radius: 1rem;
+}
+.welcome-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.welcome-Container img {
+  height: 20rem;
+}
+.welcome-Container span {
+  color: #4e0eff;
+}
+.msg-container {
+  display: grid;
+  grid-template-rows: 95px 455px 75px;
+}
+.conversion-header,
+.msg-send-section {
+  background-color: #101e22;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid rgb(41, 65, 43);
+}
+.logoutContainer {
+  font-size: 3rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+.contact img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.conversion-header img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.conversion-header-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+.conversation {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.smile-Emoji {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.msgContainer {
+  background-color: #1d2c31;
+  border: none;
+  color: white;
+  width: 50rem;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+.msg-send-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.EmojiPickerReact.epr-dark-theme {
+  top: 230px !important;
+  position: fixed !important;
+  background-color: #131324;
+}
+aside.EmojiPickerReact.epr-main.epr-dark-theme {
+  --epr-bg-color: transparent;
+  border-color: #182b31;
+  border-radius: 0;
+}
+.EmojiPickerReact .epr-body::-webkit-scrollbar {
+  background-color: #080420;
+  width: 10px;
+}
+.EmojiPickerReact .epr-body::-webkit-scrollbar-thumb {
+  background-color: #9a86f3;
+}
+
+aside.EmojiPickerReact.epr-main.epr-dark-theme input.epr-search {
+  background-color: transparent;
+  border-color: #9a86f3;
+}
+.sendButton {
+  font-size: 2rem;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.msg-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  font-size: large;
+  gap: 0.7rem;
+  overflow: auto;
+}
+.msg-main-section::-webkit-scrollbar {
+  background-color: #080420;
+  width: 10px;
+}
+.msg-main-section::-webkit-scrollbar-thumb {
+  background-color: #ffffff39;
+  border-radius: 1rem;
+}
+.msg {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+.msg .content {
+  max-width: 20rem;
+  overflow-wrap: break-word;
+}
+.sended {
+  align-self: flex-end;
+  background-color: #00604c;
+}
+.received {
+  align-self: flex-start;
+  background-color: #1d2c31;
+}
+.bulgedOut{
+  position: relative;
+}
+.received.bulgedOut::before{
+  content:"";
+  position: absolute;
+  top: -10px;
+  left:-8px ;
+  width:0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #1d2c31;
+  transform: rotateZ(315deg);
+}
+.sended.bulgedOut::before{
+  content:"";
+  position: absolute;
+  top: -10px;
+  right:-8px ;
+  width:0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #00604c;
+  transform: rotateZ(315deg);
+}

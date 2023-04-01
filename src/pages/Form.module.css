@@ -1,0 +1,84 @@
+.FormContainer{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #131324;
+}
+
+.FormContainer .brand{
+    display: flex;
+    align-content: center;
+    gap:1rem;
+    justify-content: center;
+}
+
+.FormContainer img{
+    height: 5rem;
+}
+.FormContainer h1{
+    color:white;
+    text-transform: uppercase;
+}
+
+.FormContainer form{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    background-color: #00000076;
+    border-radius: 2rem;
+    padding: 2rem 5rem;
+    margin:2rem;
+    
+}
+@media screen and (min-width: 768px) {
+    .FormContainer form{
+        width: 30rem;
+    }
+}
+
+.FormContainer input{
+    background-color: transparent;
+    padding: 1rem;
+    border: 0.1rem solid #4e0eff;
+    color:white;
+    border-radius: 0.4rem;
+    width:100%;
+    font-size: 1rem;
+}
+
+.FormContainer input:focus{
+    border:0.1rem solid #997af0;
+    outline: none;
+}
+
+.FormContainer button{
+    background-color: #6e54b7;
+    color:white;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: 0.25s ease-in-out;
+}
+.FormContainer button:hover{
+    background-color: #4e0eff;
+}
+.FormContainer span{
+    color:white;
+}
+.FormContainer a{
+    text-decoration: none;
+    color:#4e0eff;
+    font-weight: bold;
+}
+
+
+
