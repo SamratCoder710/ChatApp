@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# SNAPPY: Full-stack Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Introduction
 
-## Available Scripts
+The MERN stack which consists of **Mongo DB**, **Express.js**, **Node.js**, and **React.js** is a popular stack for building full-stack web-based applications because of its simplicity and ease of use. In recent years, with the explosive popularity and the growing maturity of the JavaScript ecosystem, the MERN stack has been the goto stack for a large number of web applications. This stack is also highly popular among newcomers to the JS field because of how easy it is to get started with this stack.
+## #Walkthrough Video of the Project 
+[screen-capture (1).webm](https://user-images.githubusercontent.com/85514305/229291272-1b6a4e30-864d-4d4e-8504-5a168958253e.webm)
+<br></br>
+[screen-capture.webm](https://user-images.githubusercontent.com/85514305/229291250-83a67b27-9584-488b-82d5-af65d303f411.webm)
+<br/><br/>
+This repo consists of a **Chat Application** built with the MERN stack.
+<br/><br/>
+This is a full-stack chat application that can be up and running with just a few steps. 
+Its frontend is built with React.
+The backend is built with Express.js and Node.js.
+Real-time message broadcasting is developed using [Socket.IO](https://socket.io/).
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+This application provides users with the following features
+<br/>
+* Login and Signup to become a Snappy head.
+* Users can choose from exciting avatars as their Profile picture.
+* Users have the option to select local image as their profice picture.
+* Real-time updates to the user list, conversation list, and conversation messages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##### Chat Window
+![image](https://user-images.githubusercontent.com/85514305/229290794-c09d78ca-cb9a-4309-95ba-36c15689b080.png)
 
-### `npm test`
+<br/><br/>
+##### Private Chat Window
+![image](https://user-images.githubusercontent.com/85514305/229290862-fff055c1-32c4-4a8c-8aca-908c3fafdafe.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/><br/>
+##### User Login
+![image](https://user-images.githubusercontent.com/85514305/229290889-85674459-baff-4092-9452-9c50d37b8780.png)
 
-### `npm run build`
+<br></br>
+##### User Signup
+![image](https://user-images.githubusercontent.com/85514305/229290925-b96076d0-f834-48f4-b95f-265f39296bca.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br></br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### How to use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can have this application up and running with just a few steps because it has both the frontend and the backend in a single repository. Follow the steps below to do so.
 
-### `npm run eject`
+1. Clone this repo
+2. Once you have the repo, you need to install its dependencies. So using a terminal, move into the root directory of the project and execute `npm install` to install the dependencies of the Node.js server and then run `npm run client-install` to install the dependencies of the frontend. The second command is a custom command that I wrote to simplify the installation process.
+3. This application uses MongoDB as its Database. So make sure you have it installed. You can find detailed guides on how to do so [here](https://docs.mongodb.com/manual/administration/install-community/). Once installed, make sure that your local MongoDB server is not protected by any kind of authentication. If there is authentication involved, make sure you edit the `mongoURI` in the `config/keys.js` file.
+4. Finally, all you have to do is simply run `npm run dev`. If this command fails, try installing the package [concurrently](https://www.npmjs.com/package/concurrently) globally by running `npm install -g concurrently` and then running the `dev` command.
+5. The frontend of the application will be automatically opened in your web browser and you can test it away.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Things to note
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* The frontend is created using [create-react-app](https://github.com/facebook/create-react-app)
+* Database connections in the backend are handled using the [Mongoose ORM](https://mongoosejs.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Future Enhancements
 
-## Learn More
+The Application contains basic chat features as of now.Planning to add few exciting features like adding time in the message content and also provide imagepicker to User so that they are able to crop their Profile picture and other details. You are welcome to open issues if you find any and I will accept PR's as well.
+<br/><br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cheers 💻 🍺 🔥 🙌
